@@ -6,7 +6,8 @@ import {
   Presentation, 
   Download, 
   ShieldCheck, 
-  ArrowUp
+  ArrowUp,
+  ExternalLink
 } from 'lucide-react';
 
 interface FooterProps {
@@ -171,6 +172,26 @@ export const Footer: React.FC<FooterProps> = ({ setActiveTab }) => {
         <div className="mt-10 pt-6 border-t border-slate-800/60 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-400">
           <div>
             © 2023–2026 Department of Materials Science and Engineering, University of Moratuwa. All academic rights reserved.
+          </div>
+          <div className="flex items-center gap-4 text-xs">
+            <a
+              href="https://github.com/premakumarahps/heat-sink-thermodynamic-analysis"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-slate-400 hover:text-white transition-colors flex items-center gap-1"
+            >
+              <span>GitHub Repository</span>
+              <ExternalLink className="w-3.5 h-3.5" />
+            </a>
+            <a
+              href="https://premakumarahps.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-slate-400 hover:text-white transition-colors flex items-center gap-1"
+            >
+              <span>Main Portfolio</span>
+              <ExternalLink className="w-3.5 h-3.5" />
+            </a>
           </div>
           <div className="font-mono text-slate-400">
             MT1070: Thermodynamics and Phase Equilibria
