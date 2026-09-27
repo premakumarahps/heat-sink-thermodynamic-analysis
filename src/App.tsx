@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { OverviewSection } from './components/OverviewSection';
@@ -86,6 +87,9 @@ export function App() {
 
       {/* Global Academic Footer */}
       <Footer setActiveTab={setActiveTab} />
+
+      {/* Vercel Web Analytics */}
+      <Analytics />
 
     </div>
   );
